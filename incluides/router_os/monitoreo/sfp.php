@@ -31,13 +31,6 @@ if ($p > 0) {
                         //Guardar usuario y pass mk
                               $user = $c['user'];
                               $pass = $c['pass'];
-                  }elseif($data['tipo'] == 3){
-                      //conexiones a tablas de datos
-                      $queryc = mysqli_query($conexion, "SELECT * FROM pass WHERE tipo = 2");
-                      $c = mysqli_fetch_assoc($queryc);
-                //Guardar usuario y pass mk
-                      $user = $c['user'];
-                      $pass = $c['pass'];
                   }
                     //Guardar ip de mk
             $ip_mk = $data['ip_mk'];
